@@ -1,2 +1,0 @@
-# gilwebdev.github.io
-MyWebSite
