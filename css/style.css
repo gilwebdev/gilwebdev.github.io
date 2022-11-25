@@ -1,3 +1,4 @@
+/* CSS v1.0.1 */
 
 body {
   background-image: url("../imgs/wp-1.svg");
@@ -92,5 +93,12 @@ body {
   .container-central {
     height: 100vh;
     margin: 20px auto 0px auto;
+  }
+}
+
+@media (max-width: 320px) {
+  /* For mobile phones: */
+  .content-tags {
+    margin-left: 5%;
   }
 }
