@@ -99,6 +99,6 @@ body {
 @media (max-width: 360px) {
   /* For mobile phones: */
   .content-tags {
-    margin-left: 3% !important;
+    padding: 20px !important;
   }
 }
