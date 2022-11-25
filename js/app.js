@@ -100,5 +100,3 @@ setTimeout(function(){
   $('.loading').hide();
   $('.content-all').css({ 'display': 'block', 'width': '100%', 'display' : 'flex', 'align-items' : 'center' });
 }, 1000);
-
-$('#alert').text(`[W: ` + window.innerWidth + `]`);
