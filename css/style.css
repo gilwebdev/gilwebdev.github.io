@@ -87,8 +87,7 @@ body {
 
 /* Responsive CSS */
 
-/* max-width: 768px */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   /* For mobile phones: */
   .container-central {
     height: 100vh;
