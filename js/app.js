@@ -8,7 +8,8 @@ const myTags = [
 // var tagCloud = TagCloud('.content-tag-cloud', myTags);
 var tagCloud = TagCloud('.content-tag-cloud', myTags, {
   // radius in px
-  radius: 300,
+  // radius: 300,
+  radius: 250,
   // animation speed
   // slow, normal, fast
   maxSpeed: 'fast',
