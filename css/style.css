@@ -84,3 +84,14 @@ body {
 .mail-to {
   color:#17a2b8 !important;
 }
+
+/* Responsive CSS */
+
+/* max-width: 768px */
+@media (max-width: 767.98px) {
+  /* For mobile phones: */
+  .container-central {
+    height: 100vh;
+    margin: 20px auto 0px auto;
+  }
+}
