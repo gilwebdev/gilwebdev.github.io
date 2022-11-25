@@ -96,7 +96,7 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   /* For mobile phones: */
   .content-tags {
     margin-left: 5%;
