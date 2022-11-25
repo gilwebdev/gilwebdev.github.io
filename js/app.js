@@ -1,4 +1,18 @@
-/* App.js v1.0.0 */
+/* App.js v1.0.1 */
+
+function calcWidth() {
+  var width = 0;
+  if (window.innerWidth <= 767){
+    if (window.innerWidth >= 500){
+      width = 250;
+    } else {
+      width = window.innerWidth - 200;
+    }
+  } else {
+    width = 300;
+  }
+  return Math.ceil(width);
+}
 
 const myTags = [
   'Bootstrap', 'CSS', 'Docker', 'Git', 'HTML', 'JavaScript', 'jQuery', 'Material UI', 'MongoDB', 'MySQL',
@@ -9,7 +23,7 @@ const myTags = [
 var tagCloud = TagCloud('.content-tag-cloud', myTags, {
   // radius in px
   // radius: 300,
-  radius: 250,
+  radius: calcWidth(),
   // animation speed
   // slow, normal, fast
   maxSpeed: 'fast',
