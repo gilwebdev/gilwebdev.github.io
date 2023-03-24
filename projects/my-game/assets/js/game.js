@@ -39,15 +39,15 @@ var music_2;
 var game = new Phaser.Game(config);
 
 function preload (){
-	this.load.image('sky', 'assets/imgs/sky.png');
+  this.load.image('sky', 'assets/imgs/sky.png');
   this.load.image('ground', 'assets/imgs/platform.png');
-	this.load.image('ground-2', 'assets/imgs/platform-2.png');
-	this.load.image('star', 'assets/imgs/star.png');
+  this.load.image('ground-2', 'assets/imgs/platform-2.png');
+  this.load.image('star', 'assets/imgs/star.png');
   this.load.image('bomb', 'assets/imgs/bomb.png');
   this.load.image('arrows', 'assets/imgs/arrows.png');
   this.load.image('shield', 'assets/imgs/shield.png');
   this.load.image('flash', 'assets/imgs/flash.png');
-	this.load.image('shoe', 'assets/imgs/shoe.png');
+  this.load.image('shoe', 'assets/imgs/shoe.png');
   this.load.audio('sound-1', ['assets/audio/sound-1.mp3', 'assets/audio/sound-1.ogg']);
   this.load.audio('sound-2', ['assets/audio/sound-2.mp3', 'assets/audio/sound-2.ogg']);
   this.load.audio('shield-on', ['assets/audio/shield-on.mp3', 'assets/audio/shield-on.ogg']);
@@ -74,7 +74,7 @@ function create (){
   // Arrows
   var arrows;
   var myTimer = setInterval(function(){
-    arrows = this.platforms.create(100, 450, 'arrows');
+    arrows = this.platforms.create(720, 490, 'arrows');
     setTimeout(function(){ arrows.destroy(); },500);
   }, 1000);
   setTimeout(function(){ clearInterval(myTimer); }, 2000);
