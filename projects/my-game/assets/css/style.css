@@ -1,0 +1,73 @@
+body {
+	margin: 0;
+	background-color: #000;
+	color: #FFF;
+}
+canvas {
+	display: block;
+	margin: 10px auto;
+	/* border: 1px solid #F4A023; */
+	border: 1px solid #282828;
+}
+.rank{
+	display: block;
+	width: 800px;
+	height: 72px;
+	margin: 10px auto 0px auto;
+	/* border: 1px solid #F4A023; */
+	border: 1px solid #282828;
+	border-radius: 5px;
+}
+.list{
+	/* width: 450px; */
+	/* position: absolute; */
+	/* float: left; */
+	/* background-color: green; */
+}
+.list ul{
+	padding: 5px;
+	margin: 0px auto 0px auto;
+}
+.list ul li{
+	list-style: none;
+}
+.donate {
+  text-align: center;
+  /* background-color: blue; */
+}
+.acoes{
+	/* width: 350px; */
+	/* position: relative; */
+	/* float: right; */
+	text-align: right;
+	/* background-color: red; */
+}
+.acoes > p{
+	margin: 5px 5px 5px auto;
+}
+.btn-logout, .player{
+	display: none;
+}
+.aviso, .player{
+	margin-right: 5px;
+}
+.modal{
+	color: #000;
+}
+/* Blinker */
+@-webkit-keyframes blinker {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+@keyframes blinker {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+.div-blink{
+  text-decoration: blink;
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function:ease-in-out;
+  -webkit-animation-direction: alternate;
+}

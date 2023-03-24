@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8" />
+  <title>MyGame v1.2 | By: gilwebdev</title>
+  <link rel="icon" type="image/png" href="assets/imgs/boy.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="assets/js/bootstrap/bootstrap.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+	<script src="assets/js/script.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
+	<script src="assets/js/game.js"></script> 
+	<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="row rank">
+		<div class="col-sm-4 list">
+			<ul>
+				<li id="score-1">#1 SCORE: Carregando..</li>
+				<li id="score-2">#2 SCORE: Carregando..</li>
+				<li id="score-3">#3 SCORE: Carregando..</li>
+			</ul>
+		</div>
+    <div class="col-sm-4 donate">
+      <a href="javascript:;" class="btn btn-success btn-donate" data-toggle="modal" data-target="#myModal2" style="margin: 15px auto;">
+        <span class="glyphicon glyphicon-heart" aria-hidden="true" style="color: red;"></span> Donate to game project.
+      </a>
+    </div>
+		<div class="col-sm-4 acoes">
+			<p>
+				<span id="aviso" class="aviso div-blink"> Clique aqui para </span>
+				<span id="player" class="player"> Player </span>
+			</p>
+			<p>
+				<a href="javascript:;" class="btn btn-primary btn-login" data-toggle="modal" data-target="#myModal">
+					<span class="glyphicon glyphicon-flash" aria-hidden="true"></span> Participar
+				</a>
+				<a href="javascript:;" onclick="sairFb()" class="btn btn-default btn-logout">
+					<span class="glyphicon glyphicon-off" aria-hidden="true"></span> Sair
+				</a>
+			</p>
+		</div>
+	</div>
+	<!-- Small modal login -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-sm" role="document">
+	  	<form id="formCad" onsubmit="event.preventDefault();entrarFb()">
+	  		<div class="modal-content">
+	  			<div class="modal-header">
+	  				Identifique-se:
+	  			</div>
+	  			<div class="modal-body">
+	  				<div class="form-group">
+	  					<input type="text" class="form-control" id="exampleInputNome" name="nome" placeholder="Nome" required>
+	  				</div>
+	  				<div class="form-group">
+	  					<input type="email" class="form-control" id="exampleInputEmail" name="email" placeholder="Email" required>
+	  				</div>
+	  			</div>
+	  			<div class="modal-footer">
+	  				<button type="submit" class="btn btn-primary">Salvar</button>
+	  				<a href="javascript:;"  class="btn btn-default" data-dismiss="modal">Cancelar</a>
+	  			</div>
+	  		</div>
+	    </form>
+	  </div>
+	</div>
+	<!-- Small modal donate -->
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+	  <div class="modal-dialog modal-sm" role="document">
+	  	<form id="formCad" onsubmit="event.preventDefault();entrarFb()">
+	  		<div class="modal-content">
+	  			<div class="modal-header">
+	  				PIX
+	  			</div>
+	  			<div class="modal-body">
+	  				<img src="assets/imgs/pix.jpg" alt="PIX">
+            <p style="text-align: center;margin: 10px 0 0px !important;">Gilberson Santos da Silva <br /> Nu Pagamentos S.A. </p>
+	  			</div>
+	  			<div class="modal-footer">
+	  				<a href="javascript:;"  class="btn btn-default" data-dismiss="modal">Fechar</a>
+	  			</div>
+	  		</div>
+	    </form>
+	  </div>
+	</div>
+
+</body>
+</html>
