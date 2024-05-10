@@ -19,10 +19,29 @@
   
   <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script>
+    function languageToggle(lang) {
+      if(lang === "pt") {
+        $('#content-en').hide();
+        $('#content-pt-br').show();
+      } else {
+        $('#content-en').show();
+        $('#content-pt-br').hide();
+      }
+    }
+  </script>
   
   <style>
-    .content-all {
+    .content-all, #content-en {
       display: none;
+    }
+    .language-bt {
+      display: flex;
+      margin-left: 5%;
+      margin-bottom: 8px;
+    }
+    .language-bt > div {
+      margin-right: 1%;
     }
   </style>
 </head>
@@ -33,7 +52,20 @@
     </div>
     <div class="row content-all">
       <div class="col-md-6">
-        <div class="content-about">
+        <div class="language-bt">
+          <div>
+            <a href="javascript:;" onclick="languageToggle('pt')">
+              <img src="imgs/lang-pt.png" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="javascript:;" onclick="languageToggle('en')">
+              <img src="imgs/lang-en.png" alt="">
+            </a>
+          </div>
+        </div>
+        <!-- EN -->
+        <div class="content-about" id="content-en">
           <h1 class="about-title">About me</h1>
           <div>
             <p class="about-p">
@@ -43,7 +75,7 @@
               At the moment, I'm studying English. I also dedicate my time to learn new things and adapt to the new technologies out there.
             </p>
             <p class="about-p">
-              I love JavaScript, and right now I'm working with Vue.js, React and .Net Core at Woopi Stefanini.
+              I love JavaScript and am currently working with Vue.js, React and Node.js.
             </p>
             <p class="about-p">
               I'm always interested in a challenge, so be sure to reach out to me if you have one.
@@ -51,6 +83,29 @@
             <p class="about-p">
               <h6>
                 Contact: <a href="mailto:gilwebdev@gmail.com" class="mail-to">gilwebdev@gmail.com</a>
+              </h6>
+            </p>
+          </div>
+        </div>
+        <!-- PT-BR -->
+        <div class="content-about" id="content-pt-br">
+          <h1 class="about-title">Sobre mim</h1>
+          <div>
+            <p class="about-p">
+              Olá, sou Gil, um desenvolvedor full-stack brasileiro. Gosto de trabalhar em projetos complexos e aprender com eles, seja em equipe ou sozinho.
+            </p>
+            <p class="about-p">
+              No momento estou estudando inglês. Também dedico meu tempo para aprender coisas novas e me adaptar às novas tecnologias que existem.
+            </p>
+            <p class="about-p">
+              Adoro JavaScript e atualmente estou trabalhando com Vue.js, React e Node.js.
+            </p>
+            <p class="about-p">
+              Estou sempre interessado em um desafio, então não deixe de entrar em contato comigo se tiver um.
+            </p>
+            <p class="about-p">
+              <h6>
+                Contato: <a href="mailto:gilwebdev@gmail.com" class="mail-to">gilwebdev@gmail.com</a>
               </h6>
             </p>
           </div>

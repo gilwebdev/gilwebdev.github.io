@@ -16,7 +16,8 @@ function calcWidth() {
 
 const myTags = [
   'Bootstrap', 'CSS', 'Docker', 'Git', 'HTML', 'JavaScript', 'jQuery', 'Material UI', 'MongoDB', 'MySQL',
-  '.Net Core', 'Node.js', 'PHP', 'Python', 'React', 'SASS', 'TypeScript', 'Vue.js',
+  '.Net Core', 'Node.js', 'PHP', 'Python', 'React', 'SASS', 'TypeScript', 'Vue.js', 'PostgreSQL', 'Microsoft Sql Server',
+  'Argo CD', 'REST API',
 ];
 
 // var tagCloud = TagCloud('.content-tag-cloud', myTags);
@@ -92,6 +93,18 @@ var i = setInterval(function(){
 
   var div17 = document.getElementsByClassName('tagcloud--item')[17];
   div17.innerHTML = `<img src="imgs/vuejs.svg" width="40" height="auto" alt="Vue.js">`;
+  
+  var div18 = document.getElementsByClassName('tagcloud--item')[18];
+  div18.innerHTML = `<img src="imgs/postgresql.svg" width="40" height="auto" alt="PostgreSQL.js">`;
+  
+  var div19 = document.getElementsByClassName('tagcloud--item')[19];
+  div19.innerHTML = `<img src="imgs/microsoft-sql-server.svg" width="60" height="auto" alt="Microsoft Sql Server">`;
+  
+  var div20 = document.getElementsByClassName('tagcloud--item')[20];
+  div20.innerHTML = `<img src="imgs/argo-cd.svg" width="50" height="auto" alt="Argo CD">`;
+  
+  var div21 = document.getElementsByClassName('tagcloud--item')[21];
+  div21.innerHTML = `<img src="imgs/rest-api.svg" width="45" height="auto" alt="REST API">`;
 
   counter++; if(counter === 1) { clearInterval(i); }
 }, 10);
